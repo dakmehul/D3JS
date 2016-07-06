@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html ng-app="d3App" xmlns="http://www.w3.org/1999/html" xmlns="http://www.w3.org/1999/html">
+<head lang="en">
+    <meta name="description" content="Drawing Shapes w/ D3 - "/>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>D3 App</title>
+
+    <link href=lib/bootstrap/bootstrap.css rel=stylesheet>
+    <link href=lib/bootstrap/bootstrap-theme.css rel=stylesheet>
+    <link href=assets/style/app.css rel=stylesheet>
+
+</head>
+
+<nav class="navbar navbar-inverse">
+    <div>
+        <div class="collapse navbar-collapse" id="myNavbar">
+            <ul class="nav nav-tabs">
+                <li><a ui-sref="bar">Bar Charts</a></li>
+                <li><a ui-sref="line">Line Charts</a></li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<div class="container">
+    <div ui-view ></div>
+</div>
+
+<script src="lib/jquery/jquery-1.12.1.js"></script>
+<script src="lib/angular/angular.js"></script>
+<script src="lib/ui-bootstrap/ui-bootstrap-tpls-1.2.2.min.js"></script>
+<script src="lib/bootstrap/bootstrap.js"></script>
+<script src="lib/ui-router/angular-ui-router.js"></script>
+<script src="lib/d3/d3.js"></script>
+
+<!--Application Files-->
+<script src="scripts/app.js"></script>
+<script src="scripts/app/charts/bar-chart/bar-chart-ctrl.js"></script>
+<script src="scripts/app/charts/line-chart/line-chart-ctrl.js"></script>
+<!--directives-->
+<script src="scripts/app/directives/bar-chart.js"></script>
+
+
+</body>
+</html>
+
+<!--JS Bin-->
+
+<!--
+<!DOCTYPE html>
+<html>
+<head>
+  <meta name="description" content="Drawing Shapes w/ D3 - "/>
+  <meta charset="utf-8">
+  <title>JS Bin</title>
+  <script src="https://d3js.org/d3.v3.min.js" charset="utf-8"></script>
+</head>
+<body>
+
+</body>
+</html>
+-->
