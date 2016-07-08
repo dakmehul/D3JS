@@ -1,6 +1,6 @@
 
 angular.module('d3App').controller('lineChartCtrl', ['$scope', function($scope) {
-    /*console.log(storageService.currentText)*/;
+    
     $scope.outputText = "About Page";
 
     var w = 400;

@@ -46,15 +46,14 @@ angular.module('d3App').controller('barChartCtrl', ['$scope', function ($scope) 
         .text(function (d) {
             return d;
         })
-        .attr("x", function(d,i){
-            return i * (w / dataSet.length) + (w / dataSet.length - padding) / 2;
-        })
-        .attr("y",function(d){
-            return h - (d*4)+14;
-        })
-        .attr("font-family", "sans-serif ")
-        .attr("font-size", 12)
-        .attr("fill", "white")
+        .attr({
+            "text-anchor" : "middle",
+            x: function(d,i){ return i* (w / dataSet.length)+(w/dataSet.length-padding)/2;},
+            y: function(d){ return h; },
+            "font-family": "sans-serif",
+            "font-size": 12,
+            "fill": "white"
+        });
 }]);
 
 /*var w = 300;

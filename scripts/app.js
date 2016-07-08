@@ -13,6 +13,11 @@ app.config(function($stateProvider, $urlRouterProvider) {
             templateUrl: "scripts/app/charts/line-chart/line-chart.html",
             controller: 'lineChartCtrl'
         })
+        .state('scatterPlot', {
+            url: "/scatter-plot",
+            templateUrl: "scripts/app/charts/scatter-plot/scatter-plot.html",
+            controller: 'scatterPlotCtrl'
+        })
         .state('hivePlot', {
             url: "/hive-plot",
             templateUrl: "scripts/app/hive-plot/hive-plot.html",
