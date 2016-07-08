@@ -19,9 +19,10 @@ angular.module('d3App').controller('lineChartCtrl', ['$scope', function($scope) 
         {"month":100, "sales":130}
     ];
 
-    var lineFun = d3.line()
+    var lineFun = d3.svg.line()
         .x(function(d){ return d.month*3; })
         .y(function(d){ return h-d.sales; })
+        .interpolate("linear");
 
     $scope.svg = d3.select("body")
         .append("svg")
