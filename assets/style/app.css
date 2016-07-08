@@ -81,3 +81,12 @@ footer {
     position:relative;
     top:1px;
 }
+
+.link {
+    fill: none;
+    stroke-width: 1.5px;
+}
+.axis, .node {
+    stroke: #000;
+    stroke-width: 1.5px;
+}

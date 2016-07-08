@@ -13,4 +13,9 @@ app.config(function($stateProvider, $urlRouterProvider) {
             templateUrl: "scripts/app/charts/line-chart/line-chart.html",
             controller: 'lineChartCtrl'
         })
+        .state('hivePlot', {
+            url: "/hive-plot",
+            templateUrl: "scripts/app/hive-plot/hive-plot.html",
+            controller: 'hivePlotCtrl'
+        })
 });
