@@ -54,6 +54,7 @@ angular.module('d3App').controller('lineChartCtrl', ['$scope', function($scope) 
         .attr("text-anchor", "start")
         .attr("dy",".35em")
         .attr("font-weight", function(d,i){
+            console.log("Value of I:"+i);
             if(i===0 || i==(monthlySales.length-1)){
                 return "bold";}
             else{

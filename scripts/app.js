@@ -23,4 +23,9 @@ app.config(function($stateProvider, $urlRouterProvider) {
             templateUrl: "scripts/app/hive-plot/hive-plot.html",
             controller: 'hivePlotCtrl'
         })
+        .state('hiveJson', {
+            url: "/hive-with-Json",
+            templateUrl: "scripts/app/hive-plot/hive-json.html",
+            controller: 'hiveJsonCtrl'
+        })
 });
