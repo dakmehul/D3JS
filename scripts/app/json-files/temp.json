@@ -1,0 +1,18 @@
+{
+  "edges":[
+    {
+      "source":{
+        "id":1,
+        "axis":0,
+        "axisName":"Cluster 0",
+        "size":2
+      },
+      "target":{
+        "id":4,
+        "axis":0,
+        "axisName":"Cluster 0",
+        "size":2
+      }
+    }
+  ]
+}
